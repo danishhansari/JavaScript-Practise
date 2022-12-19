@@ -1,0 +1,26 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  height: 600px;
+  width: 600px;
+}
+.container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform-origin: center center;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

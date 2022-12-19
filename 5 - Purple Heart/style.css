@@ -1,0 +1,33 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  border: 0px;
+  outline: 0px;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  transition: 0.3s all ease-in-out;
+  overflow: hidden;
+}
+
+.heart {
+  height: 105vh;
+  position: fixed;
+  top: -30px;
+  font-size: 2em;
+  -webkit-animation: fall 2s linear;
+          animation: fall 2s linear;
+}
+
+@-webkit-keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}/*# sourceMappingURL=style.css.map */

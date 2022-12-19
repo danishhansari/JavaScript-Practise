@@ -1,0 +1,37 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  border: 0px;
+  outline: 0px;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  transition: 0.3s all ease-in-out;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#container #img-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.3s linear;
+}
+
+img {
+  height: 500px;
+  width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */
