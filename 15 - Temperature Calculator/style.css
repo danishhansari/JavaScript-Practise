@@ -1,0 +1,38 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #1b1b1b;
+}
+body .farenhit {
+  border-block: 4px solid grey;
+}
+body div {
+  height: 33.33vh;
+}
+body div input {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 7em;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+::-moz-placeholder {
+  color: rgb(51, 51, 51);
+}
+
+:-ms-input-placeholder {
+  color: rgb(51, 51, 51);
+}
+
+::placeholder {
+  color: rgb(51, 51, 51);
+}/*# sourceMappingURL=style.css.map */

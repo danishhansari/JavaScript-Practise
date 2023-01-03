@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: #1b1b1b;
+
+
+    .farenhit{
+        border-block: 4px solid grey;
+    }
+    div{
+        height: 33.33vh;
+
+
+        input{
+            background: transparent;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            font-size: 7em;
+            border: none;
+            outline: none;
+            color: white;
+        }
+    }
+}
+::placeholder{
+    color: rgb(51, 51, 51);
+}
