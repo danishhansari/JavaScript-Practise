@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp" defer></script>
+    <style>
+        .cards{
+            width: 50%;
+            margin:auto;
+        }
+    </style>
+</head>
+
+<body class="bg-orange-300">
+    <div class="container m-auto">
+        <h1 class="text-center mt-10 text-4xl">Weight Converter</h1>
+    <form class="mt-10 text-center">
+        <input type="number" id="kg" class="border-0 outline-0 rounded mx-auto" placeholder="Enter Kilograms...">
+    </form>
+    <div class="cards text-center mt-10 p-10 ">
+        <div class="pounds p-10 bg-green-600 mb-3 text-white">
+            <h3>Pounds:</h3>
+            <div id="kg-pounds"></div>
+        </div>
+        <div class="lbs bg-red-800 p-10 mb-3 text-white">
+            <h3>Lbs:</h3>
+            <div id="kg-lbs"></div>
+        </div>
+        <div class="ounces p-10 bg-blue-800 mb-3 text-white">
+            <h3>Ounces:</h3>
+            <div id="kg-ounce"></div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        let pounds = document.getElementById('kg-pounds') 
+        let ouches = document.getElementById('kg-ounce');
+        let lbs = document.getElementById('kg-lbs')
+        let input = document.getElementById('kg');
+        input.addEventListener('input',() => {
+            let inputValue = input.value;
+            // Pounds and Lbs have same don't need to make another variable
+            let outputLbs = inputValue*2.2;
+            lbs.innerHTML = `${outputLbs.toFixed(2)}`;
+            pounds.innerHTML = `${outputLbs.toFixed(2)}`;
+            let outputOunces = inputValue*35.2;
+            ouches.innerHTML = `${outputOunces.toFixed(2)}`;
+            });
+    </script>
+</body>
+</html>
