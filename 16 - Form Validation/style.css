@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Open+Sans:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  background: rgb(143, 53, 234);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container {
+  border-radius: 5px;
+  padding: 2em 3em;
+  max-width: 500px;
+  width: 100%;
+  margin-inline: 1em;
+  background: white;
+}
+body .container h1 {
+  font-size: 2.5em;
+  -webkit-margin-after: 0.5em;
+          margin-block-end: 0.5em;
+}
+body .container .main-form {
+  padding-block: 1em;
+}
+body .container .main-form label {
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+body .container .main-form .form-control {
+  margin-bottom: 0.7em;
+  padding-bottom: 1.2em;
+  position: relative;
+}
+body .container .main-form .form-control.success input {
+  border-color: green;
+}
+body .container .main-form .form-control.error input {
+  border-color: red;
+}
+body .container .main-form .form-control.success i.fa-check {
+  visibility: visible;
+  color: green;
+}
+body .container .main-form .form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: red;
+}
+body .container .main-form .form-control.error small {
+  color: red;
+  visibility: visible;
+}
+body .container .main-form .form-control input {
+  display: block;
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-block: 0.2em;
+  padding: 0.5em 0.5em;
+  font-size: 1.1em;
+  position: relative;
+}
+body .container .main-form .form-control i {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  visibility: hidden;
+}
+body .container .main-form .form-control small {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  font-size: 0.9em;
+  font-weight: bold;
+  visibility: hidden;
+}
+body .container button {
+  margin-top: 1em;
+  background: rebeccapurple;
+  color: white;
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: 0.2s background ease-in-out, 0.2s scale ease-in-out;
+}
+body .container button:hover {
+  scale: 0.98;
+  background: rgb(98, 19, 177);
+}/*# sourceMappingURL=style.css.map */

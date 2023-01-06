@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Account</h1>
+
+        <form class="main-form" id="form">
+            <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" placeholder="danish" id="username">
+            <i class="fa fa-check"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>username taken</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" placeholder="dan71ish@gmail.com" id="email">
+                <i class="fa fa-check"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>invalid email</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="password">
+                <i class="fa fa-check">
+                </i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>make strong password</small>
+            </div>
+            <div class="form-control">
+                <label for="password2">Password check</label>
+                <input type="password" id="password2"  placeholder="password">
+                <i class="fa fa-check">
+                </i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>make strong password</small>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/55f803f566.js" crossorigin="anonymous"></script>
+</body>
+</html>

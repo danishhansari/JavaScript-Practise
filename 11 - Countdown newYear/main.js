@@ -1,4 +1,7 @@
-let newYears = '1 Jan 2024';
+let date = new Date;
+let current = date.currentYear() + 1;
+
+let newYears = `1 Jan ${current}`;
 
 
 let Day = document.querySelector('#days .big-text')

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Open+Sans:wght@400;500&display=swap'); 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    outline: none;
+}
+body{
+    min-height: 100vh;
+    background: rgb(143, 53, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        border-radius: 5px;
+        padding: 2em 3em;
+        max-width:500px;
+        width: 100%;
+        margin-inline: 1em;
+        background: white;
+        h1{
+            font-size: 2.5em;
+            margin-block-end: .5em;
+        }
+        .main-form{
+            padding-block: 1em;
+            label{
+                display: inline-block;
+                font-size: 1.2em;
+                font-weight: bold;
+                margin-bottom: .3em;
+            }
+            .form-control{
+                margin-bottom: .7em;
+                padding-bottom: 1.2em;
+                position: relative;
+
+                &.success input{
+                    border-color: green;
+                }
+                &.error input{
+                    border-color: red;
+                }
+                &.success i.fa-check{
+                    visibility: visible;
+                    color: green;
+                }
+                &.error i.fa-exclamation-circle{
+                    visibility: visible;
+                    color: red;
+                }
+                &.error small{
+                    color: red;
+                    visibility: visible;
+                }
+                input{
+                    display: block;
+                    width: 100%;
+                    border: 2px solid #ddd;
+                    border-radius: 5px;
+                    margin-block: .2em;
+                    padding: .5em .5em;
+                    font-size: 1.1em;
+                    position: relative;
+                }
+                i{
+                    position: absolute;
+                    top: 50px;
+                    right: 10px;
+                    visibility: hidden;
+                }
+                small{
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    font-size: .9em;
+                    font-weight: bold;
+                    visibility: hidden;
+                }
+            }
+        }
+        button{
+            margin-top: 1em;
+            background: rebeccapurple;
+            color: white;
+            display:block;
+            width: 100%;
+            padding: .5em;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: .2s background ease-in-out, .2s scale ease-in-out;
+            &:hover{
+                scale: .98;
+                background: rgb(98, 19, 177);
+            }
+        }
+    }
+}

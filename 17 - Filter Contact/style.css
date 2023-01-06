@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Raleway:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  outline: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: steelblue;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+::-moz-placeholder {
+  font-weight: 100;
+}
+
+:-ms-input-placeholder {
+  font-weight: 100;
+}
+
+::placeholder {
+  font-weight: 100;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+.container h1 {
+  text-align: center;
+  font-size: 4em;
+  font-weight: 100;
+}
+.container input {
+  letter-spacing: 1px;
+  margin-block: 2em 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  padding: 0.5em 1em;
+}
+.container #names {
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+.container #names li {
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  padding: 1em;
+}
+.container #names h5 {
+  font-size: 2.5em;
+}/*# sourceMappingURL=style.css.map */

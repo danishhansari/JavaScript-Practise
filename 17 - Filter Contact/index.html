@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Contact</h1>
+        <input type="text" id="input" placeholder="Enter name...">
+        <ul id="names">
+            <li class="collection-header">
+                <h5>A</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Adnan</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Asif</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Anwar</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Ajaz</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Anis</a>
+            </li>
+            <li class="collection-header">
+                <h5>B</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Brian</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Brandon</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Brad</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Babu</a>
+            </li>
+            <li class="collection-header">
+                <h5>C</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Cathy</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Choudary</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Calvin</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Chole</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Charlie</a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        let input = document.getElementById('input');
+        input.addEventListener('keyup', filterContact);
+        function filterContact(){
+            let filterValue = document.getElementById('input').value.toUpperCase();
+
+            let ul = document.getElementById('names');
+            let li = ul.querySelectorAll('.collection-item');
+            console.log(li)
+            for (let i = 0; i<li.length;i++){
+                let a = li[i].getElementsByTagName('a')[0];
+                if(a.innerHTML.toUpperCase().indexOf(filterValue) > -1){
+                    li[i].style.display= '';
+                }
+                else{
+                    li[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
