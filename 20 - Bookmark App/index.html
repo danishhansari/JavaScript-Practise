@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark App</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/55f803f566.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body onload="fetchBookmark()">
+    <div class="container mx-auto">
+      <div class="heading px-4">
+        <h1 class="text-4xl py-6 border-b-2 pb-8 text-gray-500 text-center md:text-left">Bookmarker</h1>
+      </div>
+
+      <div class="bg-gray-200 flex justify-center items-center my-4 p-3">
+        <div class="content px-0 md:-px-2 w-full sm:w-10/12">
+          <h1 class="text-2xl font-normal md:text-3xl text-gray-700 mb-8 text-center md:text-left">Bookmark Your Favorite Sites</h1>
+          <form id="myForm" >
+            <label for="site-name" class="block text-center mb-2 font-medium">Site Name</label>
+            <input type="text" id="site-name" class="block w-full border-2 pl-2 py-2 mb-4 rounded-md" placeholder="Website Name">
+            <label for="site-url" class="block text-center mb-2 font-medium">Site URL</label>
+            <input type="text" id="site-url" class="block w-full border-2 pl-2 py-2 mb-4 rounded-md" placeholder="Website URL">
+            <input type="submit" value="Submit" class="bg-transparent hover:bg-blue-500 text-blue-700 font-medium transition ease hover:text-white py-2 px-12 border border-blue-500 hover:border-transparent rounded s">
+          </form>
+      </div>
+    </div>
+
+    <div id="bookmark-results"></div>
+    <footer class="main-footer px-4 flex flex-col md:flex-row items-center mt-4 justify-between">
+      <p>Made with <span class="text-lg">❤️</span> by Danish</p>
+      <div class="social-handles flex mt-4 md:mt-0">
+        <a href="https://twitter.com/danish__an"><i class="fa fa-twitter fa-2x mr-4 hover:text-blue-500 transition"></i></a>
+        <a href="https://github.com/danishhansari/danishhansari"><i class="fa fa-github fa-2x mr-4 hover:text-gray-600 transition"></i></a>
+        <a href="https://www.instagram.com/danishh_ig/"><i class="fa fa-instagram fa-2x hover:text-pink-500 transition"></i></a>
+      </div>
+    </footer>
+  </div>
+
+
+<script src="./main.js"></script>
+  </body>
+</html>
