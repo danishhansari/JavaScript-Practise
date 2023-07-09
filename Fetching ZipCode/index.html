@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZipCode</title>
+    <script src="main.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/55f803f566.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        font-family: 'Inter',Arial, Helvetica, sans-serif;
+    }
+    .icon-remove,
+    .icon-check{
+        display: none;
+    }
+</style>
+<body>
+    <section class="bg-zinc-800 p-4">
+        <div class="max-w-[800px] mx-auto">
+            <h1 class="text-white text-4xl my-4">US Location Info</h1>
+            <h2 class="text-white text-xl mb-3">Enter a US ZipCode to get location info</h2>
+            <div class="form-inputs relative mb-8 ">
+                <form>
+                    <input type="text" class="w-full rounded text-xl pl-6 py-2" placeholder="Enter ZipCode">
+                    <span class="icon absolute text-zinc-400 left-2 top-[50%] translate-y-[-50%] text-xl font-bold">
+                        <i class="fa fa-map-pin"></i>
+                    </span>
+                    <span class="icon-check absolute text-xl text-zinc-400 top-[50%] translate-y-[-50%] right-4 font-bold">
+                        <i class="fa fa-check"></i>
+                    </span>
+                    <span class="icon-remove absolute text-xl text-zinc-400 top-[50%] translate-y-[-50%] right-4 font-bold">
+                        <i class="fa fa-remove"></i>
+                    </span>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full">
+        <div id="output">
+
+        </div>
+    </div>
+</body>
+</html>
